@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8" />
+<title>자기소개 블로그</title>
+<style>
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    max-width: 480px;
+    width: 100%;
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+  h1 {
+    margin: 0 0 20px;
+    font-weight: 700;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #222;
+  }
+  .intro p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+  .posts {
+    margin-top: 30px;
+  }
+  .post {
+    border-left: 3px solid #ccc;
+    padding-left: 15px;
+    margin-bottom: 25px;
+  }
+  .post h3 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: #555;
+    cursor: pointer;
+    user-select: none;
+  }
+  .extra-content {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #666;
+    display: none;
+  }
+  .extra-content.show {
+    display: block;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>안녕하세요</h1>
+    <div class="intro">
+      <p>이름: 신준재</p>
+      <p>나이: 17살</p>
+      <p>새로운 것을 배우고 나누는 걸 좋아합니다.</p>
+    </div>
+    <div class="posts">
+      <div class="post">
+        <h3 onclick="toggleContent(this)">나의 꿈</h3>
+        <p class="extra-content">컴퓨터와 관련된 일을 하고 싶습니다.</p>
+      </div>
+      <div class="post">
+        <h3 onclick="toggleContent(this)">올해 나의 목표</h3>
+        <p class="extra-content">자기계발에 집중하며 저의 꿈과 관련된것을 더 배우고 싶습니다. </p>
+      </div>
+      <div class="post">
+        <h3 onclick="toggleContent(this)">나의 취미</h3>
+        <p class="extra-content">사진 찍기를 즐깁니다. 또한 서울을 돌아다니며 시간을 보내는 것을 좋아합니다.</p>
+      </div>
+    </div>
+  </div>
+
+<script>
+  function toggleContent(clicked) {
+    const posts = document.querySelectorAll('.post');
+    posts.forEach(post => {
+      const extra = post.querySelector('.extra-content');
+      if (post.querySelector('h3') === clicked) {
+        extra.classList.toggle('show');
+      } else {
+        extra.classList.remove('show');
+      }
+    });
+  }
+</script>
+</body>
+</html>
