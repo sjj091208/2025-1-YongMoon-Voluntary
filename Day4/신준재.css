@@ -1,0 +1,127 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px;
+  background-color: #add8e6; /* 하늘색 배경 */
+  color: #333;
+}
+
+.intro {
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 36px;
+  color: #005f99;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.post {
+  background-color: #ffffff;
+  border-left: 6px solid #007acc;
+  border-radius: 10px;
+  padding: 20px 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #007acc;
+}
+
+.post p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.hobby-image {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.hobby-description {
+  margin-top: 10px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hidden {
+  display: none;
+}
+.black-text {
+  color: #000000; /* 검정색 */body {
+      font-family: 'Noto Sans KR', sans-serif;
+      margin: 0;
+      background-color: #f8fafc;
+      color: #222;
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      max-width: 600px;
+      width: 100%;
+      background: #fff;
+      padding: 30px 35px;
+      border-radius: 10px;
+    }
+    .intro h1 {
+      margin: 0 0 12px;
+      font-weight: 700;
+      font-size: 2.4rem;
+      color: #111;
+    }
+    .intro p {
+      margin: 6px 0;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+    .posts {
+      margin-top: 40px;
+    }
+    .post {
+      border-left: 4px solid #3b82f6;
+      padding-left: 16px;
+      margin-bottom: 30px;
+    }
+    .post h3 {
+      margin: 0 0 6px;
+      font-weight: 600;
+      font-size: 1.25rem;
+      color: #2563eb;
+      cursor: pointer;
+      user-select: none;
+    }
+    .post p {
+      margin: 0;
+      font-size: 1rem;
+      color: #444;
+      line-height: 1.5;
+    }
+    .extra-content {
+      margin-top: 8px;
+      font-size: 0.9rem;
+      color: #666;
+      display: none;
+    }
+    .extra-content.show {
+      display: block;
+    }
